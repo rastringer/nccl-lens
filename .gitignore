@@ -1,0 +1,24 @@
+# Build
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Logs / traces
+traces/
+*.jsonl
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# VSCode
+.vscode/
+
+# Misc
+*.o
+*.so
+*.a
