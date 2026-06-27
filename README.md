@@ -19,8 +19,8 @@ git clone https://github.com/rastringer/nccl-lens.git
 cd nccl-lens
 cmake -S cpp -B build
 cmake --build build -j
-python scripts/setup_ubuntu_cuda.sh
-python scripts/smoke_test.sh
+./scripts/setup_ubuntu_cuda.sh
+./scripts/smoke_test.sh
 ```
 
 And to run:
