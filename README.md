@@ -40,7 +40,9 @@
 
 Include latency over time, latency distribution and heatmaps.
 
+![Latency by Rank](https://github.com/rastringer/nccl-lens/blob/main/plots/latency_by_rank.png?raw=true)
 
+![Heatmap](https://github.com/rastringer/nccl-lens/blob/main/plots/latency_heatmap.png?raw=true)
 
 ## Installation
 
