@@ -10,6 +10,23 @@
 - Synthetic slow-rank injection
 - JSON trace output
 
+## Architecture
+
+```
+CUDA Benchmarks
+      ↓
+JSONL traces
+      ↓
+Python analysis
+      ↓
+Interactive plots
+```
+
+## Example JSONL output
+
+`{"rank":0,"iter":42,"gpu_ms":8.91}`
+
+
 ## Installation
 
 [Best on an instance with at least 2 x GPUs]
