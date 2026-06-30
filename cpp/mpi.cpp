@@ -1,5 +1,5 @@
-#include <mpi.h>
-#include <common.h>
+#include "mpi.h"
+#include "common.h"
 
 // Initialize MPI, find the rank/world size of the process.
 MpiContext initMPI(int argc, char** argv) {

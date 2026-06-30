@@ -1,6 +1,6 @@
 # nccl-lens
 
-(WIP) A lightweight NCCL communication profiler for detecting tail lantency and slow ranks in distributed GPU workloads.
+(WIP) A lightweight NCCL communication profiler for detecting tail latency and slow ranks in distributed GPU workloads.
 
 ## Features
 

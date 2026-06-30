@@ -1,6 +1,7 @@
 #include <common.h>
 #include "config.h"
 #include "benchmark.h"
+#include "devices.h"
 
 #include <cstdio>
 #include <cstdlib>
@@ -15,7 +16,12 @@ int main(int argc, char** argv) {
 
   auto mpi = initMPI(argc, argv);
 
-  CHECK_CUDA(cudaSetDevice(mpi.rank % 2));
+  auto device = initDeviceForRank(mpi.rank);
+
+  std::cerr << "[rank " << mpi.rank
+            << "] cuda_device=" << device.device_id
+            << " device_count=" << device.device_count
+            << std::endl;
 
   auto nccl = initNCCL(mpi);
   auto buffers = allocateBuffers(cfg);
