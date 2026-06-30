@@ -13,18 +13,33 @@
 ## Architecture
 
 ```
-CUDA Benchmarks
-      ↓
-JSONL traces
-      ↓
-Python analysis
-      ↓
-Interactive plots
+            nccl-lens
+
+        +------------------+
+        | Benchmark (C++)  |
+        +------------------+
+                  │
+        JSONL telemetry
+                  │
+                  ▼
+        +------------------+
+        | Analyzer (Python)|
+        +------------------+
+                  │
+                  ▼
+        +------------------+
+        | Plotly Reports   |
+        +------------------+
 ```
 
 ## Example JSONL output
 
 `{"rank":0,"iter":42,"gpu_ms":8.91}`
+
+## Plots
+
+Include latency over time, latency distribution and heatmaps.
+
 
 
 ## Installation
